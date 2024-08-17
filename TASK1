@@ -1,0 +1,56 @@
+import tkinter as tk
+from tkinter import messagebox
+
+class HousePricePredictor:
+    def __init__(self, master):
+        self.master = master
+        master.title("House Price Predictor")
+
+        # Create input fields
+        self.lot_area_label = tk.Label(master, text="Lot Area:")
+        self.lot_area_label.grid(row=0, column=0)
+        self.lot_area_entry = tk.Entry(master)
+        self.lot_area_entry.grid(row=0, column=1)
+
+        self.total_bsmt_sf_label = tk.Label(master, text="Total Basement SqFt:")
+        self.total_bsmt_sf_label.grid(row=1, column=0)
+        self.total_bsmt_sf_entry = tk.Entry(master)
+        self.total_bsmt_sf_entry.grid(row=1, column=1)
+
+        self.overall_qual_label = tk.Label(master, text="Overall Quality:")
+        self.overall_qual_label.grid(row=2, column=0)
+        self.overall_qual_entry = tk.Entry(master)
+        self.overall_qual_entry.grid(row=2, column=1)
+
+        self.pool_area_label = tk.Label(master, text="Pool Area:")
+        self.pool_area_label.grid(row=3, column=0)
+        self.pool_area_entry = tk.Entry(master)
+        self.pool_area_entry.grid(row=3, column=1)
+
+        self.neighborhood_label = tk.Label(master, text="Neighborhood:")
+        self.neighborhood_label.grid(row=4, column=0)
+        self.neighborhood_entry = tk.Entry(master)
+        self.neighborhood_entry.grid(row=4, column=1)
+
+        # Create predict button
+        self.predict_button = tk.Button(master, text="Predict Price", command=self.predict_price)
+        self.predict_button.grid(row=5, column=0, columnspan=2)
+
+        # Create result label
+        self.result_label = tk.Label(master, text="")
+        self.result_label.grid(row=6, column=0, columnspan=2)
+
+    def predict_price(self):
+        # Get input values
+        lot_area = float(self.lot_area_entry.get())
+        total_bsmt_sf = float(self.total_bsmt_sf_entry.get())
+        overall_qual = float(self.overall_qual_entry.get())
+        pool_area = float(self.pool_area_entry.get())
+        neighborhood = self.neighborhood_entry.get()
+
+        # Display result
+        self.result_label.config(text=f"Predicted Price: ${0:.2f}")  # Replace with actual prediction logic
+
+root = tk.Tk()
+my_gui = HousePricePredictor(root)
+root.mainloop()
