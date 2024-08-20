@@ -1,23 +1,38 @@
-Project Name: House Price Predictor GUI
+**Name: Darshan Bhangale**             
+**Company: CODTECH IT SOLUTIONS**       
+**ID: CT08DS6120**       
+**Domain: Machine Learning**       
+**Duration:AUGUST 1st 2024 to SEPTEMBER 1st 2024**    
+**Mentor: MUZAMMIL AHMED**
 
-Project Description: This project is a graphical user interface (GUI) program that allows users to input various features of a house, such as lot area, total basement square feet, overall quality, pool area, and neighborhood, and predicts the sale price of the house based on a linear regression model.
 
-Features:
+**Linear Regression on Housing Prices**
 
-User-friendly interface for inputting house features
-Predicts sale price of house based on input features
-Displays predicted price in a clear and concise format
-Technologies Used:
+**Project Overview**
+This project uses linear regression to predict housing prices based on various features such as lot area, total basement square feet, overall quality, pool area, and neighborhood. The goal of this project is to create a simple GUI-based application that allows users to input these features and predict the housing price.
 
-Python 3.8
-Tkinter 8.6 (for GUI)
-Files:
+**Code Structure**
+The project consists of a single Python file house_price_predictor.py that contains the GUI code using Tkinter and the linear regression logic.
 
-house_price_predictor_gui.py: The Python script that implements the GUI and prediction logic
-README.md: This file
-How to Run:
+**How to Run**
+Clone the repository using git clone https://github.com/your-username/linear-regression-on-housing-prices.git
+Open a terminal or command prompt and navigate to the project directory
+Run the application using python house_price_predictor.py
 
-Install Python 3.8 and Tkinter 8.6 if not already installed
-Run the house_price_predictor_gui.py script using Python (e.g. python house_price_predictor_gui.py)
-Follow the prompts to input house features and click the "Predict Price" button to see the predicted sale price
-Note: This program assumes that the linear regression model has already been trained and the coefficients are hardcoded in the predict_price method. In a real-world scenario, the model would be trained using a dataset and the coefficients would be calculated dynamically.
+**Features**
+User-friendly GUI to input features
+Linear regression model to predict housing prices
+Supports input features:
+Lot area
+Total basement square feet
+Overall quality
+Pool area
+Neighborhood
+
+**Future Work**
+Improve the accuracy of the linear regression model by collecting more data and tuning hyperparameters
+Add more features to the model to increase its predictive power
+Create a more robust GUI with error handling and validation
+
+
+
