@@ -48,8 +48,12 @@ class HousePricePredictor:
         pool_area = float(self.pool_area_entry.get())
         neighborhood = self.neighborhood_entry.get()
 
+        # Calculate price based on input values
+        # Replace this with your actual formula
+        price = lot_area * 10 + total_bsmt_sf * 5 + overall_qual * 20 + pool_area * 15
+
         # Display result
-        self.result_label.config(text=f"Predicted Price: ${0:.2f}")  # Replace with actual prediction logic
+        self.result_label.config(text=f"Predicted Price: ${price:.2f}")
 
 root = tk.Tk()
 my_gui = HousePricePredictor(root)
