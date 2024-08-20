@@ -8,24 +8,28 @@
 
 **Linear Regression on Housing Prices**
 
-**Project Overview**
+**Project Overview** 
+
 This project uses linear regression to predict housing prices based on various features such as lot area, total basement square feet, overall quality, pool area, and neighborhood. The goal of this project is to create a simple GUI-based application that allows users to input these features and predict the housing price.
 
-**Code Structure**
+**Code Structure**   
+
 The project consists of a single Python file house_price_predictor.py that contains the GUI code using Tkinter and the linear regression logic.
 
 
-**Features**
-User-friendly GUI to input features
-Linear regression model to predict housing prices
-Supports input features:
-Lot area
-Total basement square feet
-Overall quality
-Pool area
-Neighborhood
+**Features** 
+
+User-friendly GUI to input features  
+Linear regression model to predict housing prices   
+Supports input features:   
+Lot area   
+Total basement square feet   
+Overall quality   
+Pool area   
+Neighborhood   
 
 **Future Work**
+ 
 Improve the accuracy of the linear regression model by collecting more data and tuning hyperparameters
 Add more features to the model to increase its predictive power
 Create a more robust GUI with error handling and validation
