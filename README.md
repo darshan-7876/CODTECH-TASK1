@@ -14,10 +14,6 @@ This project uses linear regression to predict housing prices based on various f
 **Code Structure**
 The project consists of a single Python file house_price_predictor.py that contains the GUI code using Tkinter and the linear regression logic.
 
-**How to Run**
-Clone the repository using git clone https://github.com/your-username/linear-regression-on-housing-prices.git
-Open a terminal or command prompt and navigate to the project directory
-Run the application using python house_price_predictor.py
 
 **Features**
 User-friendly GUI to input features
