@@ -34,5 +34,7 @@ Improve the accuracy of the linear regression model by collecting more data and 
 Add more features to the model to increase its predictive power
 Create a more robust GUI with error handling and validation
 
+**Output**
 
+![Linear Regression on Housing Prices](https://github.com/user-attachments/assets/208ed1ce-9d29-41fb-be3a-cbf39e20f504)
 
